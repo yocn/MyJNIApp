@@ -11,4 +11,18 @@
         android:layout_centerInParent="true"
         android:text="Hello World!"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="start"/>
+    </LinearLayout>
+
+
 </RelativeLayout>
