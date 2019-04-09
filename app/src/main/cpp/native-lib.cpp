@@ -30,12 +30,12 @@ JNIEXPORT void JNICALL JNI_METHOD_NAME(init)(JNIEnv *env, jclass type, jint size
 }
 
 JNIEXPORT jlong JNICALL JNI_METHOD_NAME(getVectorAddr)(JNIEnv *env, jclass type, jint index) {
+//    long long1 = &map[index];
     return (jlong) &map[index];
 }
 
 JNIEXPORT void JNICALL JNI_METHOD_NAME(getVector)(JNIEnv *env, jclass type, jlong addr) {
-    
-//    LOGE("%d", addr);
+    LOGE("%ld", addr);
 }
 
 JNIEXPORT jstring JNICALL JNI_METHOD_NAME(stringFromJNI)(JNIEnv *env, jclass type) {
