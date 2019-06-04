@@ -3,7 +3,7 @@
     <style
         name="MyAppTheme"
         parent="@android:style/Theme.Holo.NoActionBar">
-        <item name="android:windowBackground">@drawable/trans</item>
+        <item name="android:windowBackground">@drawable/bg_window_drawable</item>
     </style>
 
 </resources>

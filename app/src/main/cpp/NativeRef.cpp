@@ -13,4 +13,16 @@ NativeRef::NativeRef(JNIEnv *env, jobject thiz, jobject reference, std::string c
 
 
 NativeRef::~NativeRef() {
+    int status;
+    JNIEnv* _jniEnv = NULL;
+    status = (jvm)->GetEnv((void **)&_jniEnv, JNI_VERSION_1_6);
+
+    if(status < 0)
+    {
+        status = (jvm)->AttachCurrentThread(&_jniEnv, NULL);
+        if(status < 0)
+        {
+            _jniEnv = NULL;
+        }
+    }
 }

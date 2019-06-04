@@ -18,6 +18,7 @@ public:
 private:
     jclass mClass;
     jobject mReference;
+    JavaVM *jvm;
 };
 
 
